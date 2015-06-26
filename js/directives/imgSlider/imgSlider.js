@@ -19,7 +19,7 @@
         return directive;
 
         function link(scope, element, attrs) {
-            var timeout = 5000;
+            var timeout = 6000;
             var currentIndex = 0;
             var skipInterval = false;
 

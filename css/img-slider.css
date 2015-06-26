@@ -1,5 +1,26 @@
-﻿.slider {
-  position: relative; }
+﻿html {
+  background-image: url("/images/assets/living.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.slider {
+  position: fixed;
+  left: 50%;
+  right: 10%;
+  top: 10%;
+  box-shadow: 0 0 2px 2px #000; }
+  @media (max-width: 768px) {
+    .slider {
+      top: 3%;
+      left: 50%;
+      right: 15%; } }
+  .slider #frame {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("/images/assets/frame.svg"); }
   @media (max-width: 991px) {
     .slider {
       margin-left: -15px;
@@ -11,7 +32,7 @@
     width: 10%;
     background-color: transparent;
     border: none;
-    color: lightgray;
+    color: rgba(211, 211, 211, 0.25);
     z-index: 1000;
     font-size: 1.2em; }
     .slider .slider-next:hover, .slider .slider-next:focus, .slider .slider-prev:hover, .slider .slider-prev:focus {
@@ -32,7 +53,9 @@
   .slider img {
     display: block;
     border: 1px solid transparent;
-    max-width: 100%; }
+    max-width: 98%;
+    margin-top: 1%;
+    margin-left: 1%; }
     .slider img.ng-hide-remove {
       opacity: 1;
       -moz-animation: fadeIn 1s;
